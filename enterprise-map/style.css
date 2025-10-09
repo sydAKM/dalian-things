@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+
+.top-half {
+  flex: 0 0 55%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid #ddd;
+}
+
+.map-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.marker img {
+  width: 40px;
+  height: 40px;
+}
+
+.bottom-half {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+}
+
+.info-img {
+  width: 90%;
+  height: 240px;
+  border-radius: 12px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+.info-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+
+.info-desc {
+  margin-top: 10px;
+  max-height: 220px;
+  font-size: 16px;
+  color: #555;
+  width: 90%;
+  line-height: 1.6;
+  overflow-y: auto;
+}
+
+.info-placeholder {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+  margin-top: 100px;
+}
