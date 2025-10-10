@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>开放阶梯</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/timeline.css" />
+  <script defer src="js/timeline.js"></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1>开放阶梯</h1>
+  </header>
+
+  <main>
+    <!-- 时间轴容器 -->
+    <div class="timeline-container">
+      <div class="timeline">
+        <div class="timeline-node active" data-id="1984">国家级经开区<br><span>1984</span></div>
+        <div class="timeline-node" data-id="1991">高新区<br><span>1991</span></div>
+        <div class="timeline-node" data-id="2000">出口加工区<br><span>2000</span></div>
+        <div class="timeline-node" data-id="2017">自贸区<br><span>2017</span></div>
+      </div>
+      <button id="autoPlayBtn">▶ 自动播放</button>
+    </div>
+
+    <!-- 信息展示区域 -->
+    <section id="info-section">
+      <img id="info-image" src="images/machine.jpg" alt="开放阶段图片">
+      <div id="info-text"></div>
+    </section>
+
+    <!-- 柱状图 -->
+    <section id="chart-section">
+      <h2>关键数据变化</h2>
+      <svg id="bar-chart" width="600" height="320"></svg>
+    </section>
+  </main>
+</body>
+</html>

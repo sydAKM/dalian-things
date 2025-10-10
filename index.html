@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#007BFF" />
+  <title>大连开放史项目</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <h1>从工业摇篮到开放门户</h1>
+    <p>大连47年跨越之路</p>
+  </header>
+
+  <main class="menu">
+    <a href="industry.html" class="menu-item">
+      <img src="images/machine.jpg" alt="产业巨人">
+      <div class="menu-title">产业巨人</div>
+    </a>
+
+    <a href="open-ladder.html" class="menu-item">
+      <img src="images/map-dalian.jpg" alt="开放阶梯">
+      <div class="menu-title">开放阶梯</div>
+    </a>
+
+    <a href="compare.html" class="menu-item">
+      <img src="images/compare.jpg" alt="今昔对比">
+      <div class="menu-title">今昔对比</div>
+    </a>
+
+    <a href="discussion.html" class="menu-item">
+      <img src="images/discussion.jpg" alt="讨论空间">
+      <div class="menu-title">讨论空间</div>
+    </a>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 大连开放史项目</p>
+  </footer>
+</body>
+</html>
