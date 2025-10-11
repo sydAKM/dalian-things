@@ -1,0 +1,83 @@
+body {
+  font-family: 'Microsoft YaHei', sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.timeline-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.timeline-node {
+  padding: 10px 20px;
+  background: #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.timeline-node.active {
+  background: #003366;
+  color: white;
+  transform: scale(1.1);
+}
+
+#info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#info-image {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#info-text {
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+#chart-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#bar-chart {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* 柱状图文字样式 */
+.bar-value {
+  font-size: 14px;
+  fill: #003366;
+  font-weight: bold;
+}

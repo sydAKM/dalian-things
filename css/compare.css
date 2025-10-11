@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Microsoft YaHei', sans-serif;
+  background: #f8f8f8;
+}
+
+.page-header {
+  text-align: center;
+  padding: 12px;
+  background: #003366;
+  color: white;
+}
+
+.stair-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px; /* 阶段间距 */
+  padding: 20px;
+  position: relative;
+}
+
+.stage {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.stage-left {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.stage-right {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.stage-title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.stage-img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.stage-img:hover {
+  transform: scale(1.05);
+}
+
+.stage-info {
+  max-width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  background: rgba(0, 51, 102, 0.1);
+  border-radius: 8px;
+  display: none; /* 默认隐藏 */
+}
